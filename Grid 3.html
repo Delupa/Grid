@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title> Grid 3 </title>
+        <style>
+            header {
+                background-color: aqua;
+                border: 2px solid;
+                width: 100%;
+                grid-area: header;
+                text-align: center;
+            }
+            #aside1 {
+                
+                background-color: gray;
+                font-size:small;
+                grid-area: aside1;
+                text-align: center;
+                border: 1px solid;
+            }
+               
+            main {
+                background-color: gainsboro;
+                border: 3px solid;
+                border-color: red;
+                text-align: center;
+            }
+            #aside2 {
+                background-color: gray;
+                font-size:small;
+                border-color: yellow;
+                grid-area: aside2;
+                text-align: center;
+                border: 3px solid;
+            }
+
+            footer {
+                background-color: antiquewhite;
+                border: 3px solid;
+            text-align: center;
+                grid-area: footer;
+                padding: 30px;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas: 
+                "header header header"
+                "aside1 main aside2"
+                "footer footer footer";
+                grid-template-rows: 30% 50% 20%;
+                grid-template-columns: 20% 60% 20%;
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                Minha pagina
+            </header>
+
+            <aside id="aside1">
+                <p>esquerda</p>
+            </aside>
+
+            <main>
+                <p>meio</p>
+            </main>
+
+            <aside id="aside2">
+                <p>direita</p>
+            </aside>
+
+            <footer>
+                <p>Baixo</p>
+            </footer>
+        </div>
+        
+
+    </body>
+
+
+</html>
